@@ -1,0 +1,51 @@
+<odoo>
+    <data>
+        <!-- Menú principal para Reportes Personalizados -->
+        <menuitem id="menu_custom_reports" name="Reportes Personalizados" sequence="10"/>
+
+        <!-- Reporte de Ventas -->
+        <record id="action_ventas_report" model="ir.actions.act_window">
+            <field name="name">Reporte de Ventas</field>
+            <field name="res_model">ventas.report</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="menu_ventas_report" name="Reporte de Ventas" parent="menu_custom_reports" action="action_ventas_report"/>
+
+        <!-- Reporte de Stock -->
+        <record id="action_stock_report" model="ir.actions.act_window">
+            <field name="name">Reporte de Stock</field>
+            <field name="res_model">stock.report</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="menu_stock_report" name="Reporte de Stock" parent="menu_custom_reports" action="action_stock_report"/>
+
+        <!-- Reporte de Stock Picking -->
+        <record id="action_stock_picking_report" model="ir.actions.act_window">
+            <field name="name">Reporte de Stock Picking</field>
+            <field name="res_model">stock.picking.report</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="menu_stock_picking_report" name="Reporte de Stock Picking" parent="menu_custom_reports" action="action_stock_picking_report"/>
+
+        <!-- Reporte de Productos -->
+        <record id="action_productos_report" model="ir.actions.act_window">
+            <field name="name">Reporte de Productos</field>
+            <field name="res_model">productos.report</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="menu_productos_report" name="Reporte de Productos" parent="menu_custom_reports" action="action_productos_report"/>
+
+        <!-- Reporte de Contactos -->
+        <record id="action_contactos_report" model="ir.actions.act_window">
+            <field name="name">Reporte de Contactos</field>
+            <field name="res_model">contactos.report</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="menu_contactos_report" name="Reporte de Contactos" parent="menu_custom_reports" action="action_contactos_report"/>
+    </data>
+</odoo>

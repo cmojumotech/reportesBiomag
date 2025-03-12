@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ventas_report,access_ventas_report,model_ventas_report,base.group_user,1,0,0,0
+access_stock_report,access_stock_report,model_stock_report,base.group_user,1,0,0,0
+access_stock_picking_report,access_stock_picking_report,model_stock_picking_report,base.group_user,1,0,0,0
+access_productos_report,access_productos_report,model_productos_report,base.group_user,1,0,0,0
+access_contactos_report,access_contactos_report,model_contactos_report,base.group_user,1,0,0,0
